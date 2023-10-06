@@ -1,0 +1,35 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/mherbert/Desktop/pico-w -B /Users/mherbert/Desktop/pico-w/cmake-build-debug-mingw-arm
+Using PICO_SDK_PATH from environment ('/Users/mherbert/pico-sdk')
+PICO_SDK_PATH is /Users/mherbert/pico-sdk
+Defaulting PICO_PLATFORM to rp2040 since not specified.
+Defaulting PICO platform compiler to pico_arm_gcc since not specified.
+PICO compiler is pico_arm_gcc
+-- The C compiler identification is GNU 9.2.1
+-- The CXX compiler identification is GNU 9.2.1
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/local/bin/arm-none-eabi-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/local/bin/arm-none-eabi-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/local/bin/arm-none-eabi-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Build type is Debug
+Using regular optimized debug build (set PICO_DEOPTIMIZED_DEBUG=1 to de-optimize)
+Defaulting PICO target board to pico since not specified.
+Using board configuration from /Users/mherbert/pico-sdk/src/boards/include/boards/pico.h
+-- Found Python3: /Users/mherbert/my_project_withEnv/env/bin/python3.9 (found version "3.9.10") found components: Interpreter 
+TinyUSB available at /Users/mherbert/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040; enabling build support for USB.
+Compiling TinyUSB with CFG_TUSB_DEBUG=1
+BTstack available at /Users/mherbert/pico-sdk/lib/btstack
+cyw43-driver available at /Users/mherbert/pico-sdk/lib/cyw43-driver
+Pico W Bluetooth build support available.
+lwIP available at /Users/mherbert/pico-sdk/lib/lwip
+mbedtls available at /Users/mherbert/pico-sdk/lib/mbedtls
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/mherbert/Desktop/pico-w/cmake-build-debug-mingw-arm

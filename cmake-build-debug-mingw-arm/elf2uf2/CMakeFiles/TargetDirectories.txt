@@ -1,0 +1,5 @@
+/Users/mherbert/Desktop/pico-w/cmake-build-debug-mingw-arm/elf2uf2/CMakeFiles/elf2uf2.dir
+/Users/mherbert/Desktop/pico-w/cmake-build-debug-mingw-arm/elf2uf2/CMakeFiles/edit_cache.dir
+/Users/mherbert/Desktop/pico-w/cmake-build-debug-mingw-arm/elf2uf2/CMakeFiles/rebuild_cache.dir
+/Users/mherbert/Desktop/pico-w/cmake-build-debug-mingw-arm/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
+/Users/mherbert/Desktop/pico-w/cmake-build-debug-mingw-arm/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir
