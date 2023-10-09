@@ -1,0 +1,17 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/mherbert/Desktop/pico-w -B /Users/mherbert/Desktop/pico-w/cmake-build-debug
+PICO_SDK_PATH is /Users/mherbert/pico-sdk
+PICO platform is rp2040.
+Build type is Debug
+Using regular optimized debug build (set PICO_DEOPTIMIZED_DEBUG=1 to de-optimize)
+PICO target board is pico.
+Using board configuration from /Users/mherbert/pico-sdk/src/boards/include/boards/pico.h
+TinyUSB available at /Users/mherbert/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040; enabling build support for USB.
+Compiling TinyUSB with CFG_TUSB_DEBUG=1
+BTstack available at /Users/mherbert/pico-sdk/lib/btstack
+cyw43-driver available at /Users/mherbert/pico-sdk/lib/cyw43-driver
+Pico W Bluetooth build support available.
+lwIP available at /Users/mherbert/pico-sdk/lib/lwip
+mbedtls available at /Users/mherbert/pico-sdk/lib/mbedtls
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/mherbert/Desktop/pico-w/cmake-build-debug
