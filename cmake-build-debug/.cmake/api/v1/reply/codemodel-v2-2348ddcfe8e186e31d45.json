@@ -1253,14 +1253,14 @@
 				{
 					"directoryIndex" : 85,
 					"id" : "build_variant1::@61b24f7d25c5efd9b993",
-					"jsonFile" : "target-build_variant1-Debug-84966d89482a8f9febba.json",
+					"jsonFile" : "target-build_variant1-Debug-607587a6f177d1f71c32.json",
 					"name" : "build_variant1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 85,
 					"id" : "build_variant2::@61b24f7d25c5efd9b993",
-					"jsonFile" : "target-build_variant2-Debug-7032a52ffdd542bfd5c8.json",
+					"jsonFile" : "target-build_variant2-Debug-3e9c9cb2df65033f76c1.json",
 					"name" : "build_variant2",
 					"projectIndex" : 0
 				},
@@ -1274,14 +1274,14 @@
 				{
 					"directoryIndex" : 82,
 					"id" : "hello_serial::@bf00514b22209e789892",
-					"jsonFile" : "target-hello_serial-Debug-4fef133489e6b9ffe2e5.json",
+					"jsonFile" : "target-hello_serial-Debug-b8ae3f6d920631377719.json",
 					"name" : "hello_serial",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 83,
 					"id" : "hello_usb::@7cf213cc1fe4b5210acb",
-					"jsonFile" : "target-hello_usb-Debug-9379ab0ff2bf07352efa.json",
+					"jsonFile" : "target-hello_usb-Debug-9e706ce27780482ddace.json",
 					"name" : "hello_usb",
 					"projectIndex" : 0
 				}

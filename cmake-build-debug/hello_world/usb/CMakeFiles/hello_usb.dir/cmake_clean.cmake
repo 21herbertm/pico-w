@@ -130,10 +130,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/hello_usb.dir/hello_usb.c.obj.d"
   "CMakeFiles/hello_usb.dir/ltr303.c.obj"
   "CMakeFiles/hello_usb.dir/ltr303.c.obj.d"
+  "CMakeFiles/hello_usb.dir/ov5640.c.obj"
+  "CMakeFiles/hello_usb.dir/ov5640.c.obj.d"
   "CMakeFiles/hello_usb.dir/ov5640_stream.c.obj"
   "CMakeFiles/hello_usb.dir/ov5640_stream.c.obj.d"
-  "CMakeFiles/hello_usb.dir/sensor.c.obj"
-  "CMakeFiles/hello_usb.dir/sensor.c.obj.d"
   "hello_usb.elf"
   "hello_usb.pdb"
 )

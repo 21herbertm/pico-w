@@ -1658,6 +1658,30 @@ ltr303.c.s:
 	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/ltr303.c.s
 .PHONY : ltr303.c.s
 
+ov5640.obj: ov5640.c.obj
+.PHONY : ov5640.obj
+
+# target to build an object file
+ov5640.c.obj:
+	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.obj
+.PHONY : ov5640.c.obj
+
+ov5640.i: ov5640.c.i
+.PHONY : ov5640.i
+
+# target to preprocess a source file
+ov5640.c.i:
+	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.i
+.PHONY : ov5640.c.i
+
+ov5640.s: ov5640.c.s
+.PHONY : ov5640.s
+
+# target to generate assembly for a file
+ov5640.c.s:
+	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.s
+.PHONY : ov5640.c.s
+
 ov5640_stream.obj: ov5640_stream.c.obj
 .PHONY : ov5640_stream.obj
 
@@ -1681,30 +1705,6 @@ ov5640_stream.s: ov5640_stream.c.s
 ov5640_stream.c.s:
 	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.s
 .PHONY : ov5640_stream.c.s
-
-sensor.obj: sensor.c.obj
-.PHONY : sensor.obj
-
-# target to build an object file
-sensor.c.obj:
-	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.obj
-.PHONY : sensor.c.obj
-
-sensor.i: sensor.c.i
-.PHONY : sensor.i
-
-# target to preprocess a source file
-sensor.c.i:
-	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.i
-.PHONY : sensor.c.i
-
-sensor.s: sensor.c.s
-.PHONY : sensor.s
-
-# target to generate assembly for a file
-sensor.c.s:
-	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.s
-.PHONY : sensor.c.s
 
 # Help Target
 help:
@@ -1906,12 +1906,12 @@ help:
 	@echo "... ltr303.obj"
 	@echo "... ltr303.i"
 	@echo "... ltr303.s"
+	@echo "... ov5640.obj"
+	@echo "... ov5640.i"
+	@echo "... ov5640.s"
 	@echo "... ov5640_stream.obj"
 	@echo "... ov5640_stream.i"
 	@echo "... ov5640_stream.s"
-	@echo "... sensor.obj"
-	@echo "... sensor.i"
-	@echo "... sensor.s"
 .PHONY : help
 
 

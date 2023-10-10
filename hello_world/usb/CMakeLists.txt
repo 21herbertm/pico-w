@@ -2,6 +2,7 @@ if (TARGET tinyusb_device)
     add_executable(hello_usb
             hello_usb.c
             ltr303.c
+            ov5640.c
             ov5640_stream.c sensor.h)
 
     # pull in common dependencies

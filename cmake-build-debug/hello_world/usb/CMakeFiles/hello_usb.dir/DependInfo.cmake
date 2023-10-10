@@ -180,8 +180,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/mherbert/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "hello_world/usb/CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" "gcc" "hello_world/usb/CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
   "/Users/mherbert/Desktop/pico-w/hello_world/usb/hello_usb.c" "hello_world/usb/CMakeFiles/hello_usb.dir/hello_usb.c.obj" "gcc" "hello_world/usb/CMakeFiles/hello_usb.dir/hello_usb.c.obj.d"
   "/Users/mherbert/Desktop/pico-w/hello_world/usb/ltr303.c" "hello_world/usb/CMakeFiles/hello_usb.dir/ltr303.c.obj" "gcc" "hello_world/usb/CMakeFiles/hello_usb.dir/ltr303.c.obj.d"
+  "/Users/mherbert/Desktop/pico-w/hello_world/usb/ov5640.c" "hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.obj" "gcc" "hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.obj.d"
   "/Users/mherbert/Desktop/pico-w/hello_world/usb/ov5640_stream.c" "hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.obj" "gcc" "hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.obj.d"
-  "/Users/mherbert/Desktop/pico-w/hello_world/usb/sensor.c" "hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.obj" "gcc" "hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.obj.d"
   "/Users/mherbert/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "hello_world/usb/CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "hello_world/usb/CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   )
 

@@ -97,10 +97,24 @@ hello_world/usb/CMakeFiles/hello_usb.dir/ltr303.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hello_usb.dir/ltr303.c.s"
 	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug/hello_world/usb && /usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mherbert/Desktop/pico-w/hello_world/usb/ltr303.c -o CMakeFiles/hello_usb.dir/ltr303.c.s
 
+hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.obj: hello_world/usb/CMakeFiles/hello_usb.dir/flags.make
+hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.obj: ../hello_world/usb/ov5640.c
+hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.obj: hello_world/usb/CMakeFiles/hello_usb.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mherbert/Desktop/pico-w/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.obj"
+	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug/hello_world/usb && /usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.obj -MF CMakeFiles/hello_usb.dir/ov5640.c.obj.d -o CMakeFiles/hello_usb.dir/ov5640.c.obj -c /Users/mherbert/Desktop/pico-w/hello_world/usb/ov5640.c
+
+hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hello_usb.dir/ov5640.c.i"
+	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug/hello_world/usb && /usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mherbert/Desktop/pico-w/hello_world/usb/ov5640.c > CMakeFiles/hello_usb.dir/ov5640.c.i
+
+hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hello_usb.dir/ov5640.c.s"
+	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug/hello_world/usb && /usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mherbert/Desktop/pico-w/hello_world/usb/ov5640.c -o CMakeFiles/hello_usb.dir/ov5640.c.s
+
 hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.obj: hello_world/usb/CMakeFiles/hello_usb.dir/flags.make
 hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.obj: ../hello_world/usb/ov5640_stream.c
 hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.obj: hello_world/usb/CMakeFiles/hello_usb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mherbert/Desktop/pico-w/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mherbert/Desktop/pico-w/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.obj"
 	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug/hello_world/usb && /usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.obj -MF CMakeFiles/hello_usb.dir/ov5640_stream.c.obj.d -o CMakeFiles/hello_usb.dir/ov5640_stream.c.obj -c /Users/mherbert/Desktop/pico-w/hello_world/usb/ov5640_stream.c
 
 hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.i: cmake_force
@@ -110,20 +124,6 @@ hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.i: cmake_force
 hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hello_usb.dir/ov5640_stream.c.s"
 	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug/hello_world/usb && /usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mherbert/Desktop/pico-w/hello_world/usb/ov5640_stream.c -o CMakeFiles/hello_usb.dir/ov5640_stream.c.s
-
-hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.obj: hello_world/usb/CMakeFiles/hello_usb.dir/flags.make
-hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.obj: ../hello_world/usb/sensor.c
-hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.obj: hello_world/usb/CMakeFiles/hello_usb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mherbert/Desktop/pico-w/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.obj"
-	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug/hello_world/usb && /usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.obj -MF CMakeFiles/hello_usb.dir/sensor.c.obj.d -o CMakeFiles/hello_usb.dir/sensor.c.obj -c /Users/mherbert/Desktop/pico-w/hello_world/usb/sensor.c
-
-hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hello_usb.dir/sensor.c.i"
-	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug/hello_world/usb && /usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mherbert/Desktop/pico-w/hello_world/usb/sensor.c > CMakeFiles/hello_usb.dir/sensor.c.i
-
-hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hello_usb.dir/sensor.c.s"
-	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug/hello_world/usb && /usr/local/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mherbert/Desktop/pico-w/hello_world/usb/sensor.c -o CMakeFiles/hello_usb.dir/sensor.c.s
 
 hello_world/usb/CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: hello_world/usb/CMakeFiles/hello_usb.dir/flags.make
 hello_world/usb/CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /Users/mherbert/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
@@ -1084,8 +1084,8 @@ hello_world/usb/CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/
 hello_usb_OBJECTS = \
 "CMakeFiles/hello_usb.dir/hello_usb.c.obj" \
 "CMakeFiles/hello_usb.dir/ltr303.c.obj" \
+"CMakeFiles/hello_usb.dir/ov5640.c.obj" \
 "CMakeFiles/hello_usb.dir/ov5640_stream.c.obj" \
-"CMakeFiles/hello_usb.dir/sensor.c.obj" \
 "CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" \
@@ -1161,8 +1161,8 @@ hello_usb_EXTERNAL_OBJECTS =
 
 hello_world/usb/hello_usb.elf: hello_world/usb/CMakeFiles/hello_usb.dir/hello_usb.c.obj
 hello_world/usb/hello_usb.elf: hello_world/usb/CMakeFiles/hello_usb.dir/ltr303.c.obj
+hello_world/usb/hello_usb.elf: hello_world/usb/CMakeFiles/hello_usb.dir/ov5640.c.obj
 hello_world/usb/hello_usb.elf: hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.obj
-hello_world/usb/hello_usb.elf: hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.obj
 hello_world/usb/hello_usb.elf: hello_world/usb/CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 hello_world/usb/hello_usb.elf: hello_world/usb/CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 hello_world/usb/hello_usb.elf: hello_world/usb/CMakeFiles/hello_usb.dir/Users/mherbert/pico-sdk/src/rp2_common/pico_platform/platform.c.obj

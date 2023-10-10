@@ -162,7 +162,7 @@ void ov5640_receive() {
     dma_start_channel_mask(1u << dma_channel);
 
 }
-
+/*
 int main() {
     stdio_init_all();
     ov5640_pin_init();
@@ -171,3 +171,4 @@ int main() {
     ov5640_capture();
     // ... Later, or in a loop: ov5640_receive()
 }
+ */

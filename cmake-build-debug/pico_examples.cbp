@@ -986,10 +986,16 @@
 		<Unit filename="/Users/mherbert/Desktop/pico-w/hello_world/usb/ltr303.h">
 			<Option target="hello_usb"/>
 		</Unit>
+		<Unit filename="/Users/mherbert/Desktop/pico-w/hello_world/usb/ov5640.c">
+			<Option target="hello_usb"/>
+		</Unit>
+		<Unit filename="/Users/mherbert/Desktop/pico-w/hello_world/usb/ov5640.h">
+			<Option target="hello_usb"/>
+		</Unit>
 		<Unit filename="/Users/mherbert/Desktop/pico-w/hello_world/usb/ov5640_stream.c">
 			<Option target="hello_usb"/>
 		</Unit>
-		<Unit filename="/Users/mherbert/Desktop/pico-w/hello_world/usb/sensor.c">
+		<Unit filename="/Users/mherbert/Desktop/pico-w/hello_world/usb/sensor.h">
 			<Option target="hello_usb"/>
 		</Unit>
 		<Unit filename="/Users/mherbert/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c">

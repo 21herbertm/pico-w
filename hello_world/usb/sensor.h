@@ -6,6 +6,24 @@
  * Sensor abstraction layer.
  *
  */
+#ifndef OV5640_H
+#define OV5640_H
+
+#include "pico/stdlib.h"
+#include "hardware/i2c.h"
+#include "hardware/gpio.h"
+
+void ov5640_pin_init();
+void ov5640_write_reg(uint16_t reg, uint8_t val);
+uint8_t ov5640_read_reg(uint16_t reg);
+void ov5640_init();
+void ov5640_cnfig();
+void ov5640_capture();
+void ov5640_dma_setup();
+void ov5640_receive();
+
+#endif // OV5640_H
+
 #ifndef __SENSOR_H__
 #define __SENSOR_H__
 #include <stdint.h>

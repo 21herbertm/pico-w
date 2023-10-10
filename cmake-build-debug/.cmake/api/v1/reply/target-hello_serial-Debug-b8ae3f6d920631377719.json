@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "hello_world/usb/hello_usb.elf"
+			"path" : "hello_world/serial/hello_serial.elf"
 		}
 	],
 	"backtrace" : 1,
@@ -23,7 +23,7 @@
 		],
 		"files" : 
 		[
-			"hello_world/usb/CMakeLists.txt",
+			"hello_world/serial/CMakeLists.txt",
 			"/Users/mherbert/pico-sdk/src/rp2_common/boot_stage2/CMakeLists.txt",
 			"/Users/mherbert/pico-sdk/tools/FindELF2UF2.cmake",
 			"/Users/mherbert/pico-sdk/tools/CMakeLists.txt",
@@ -39,13 +39,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 2,
+				"line" : 1,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 8,
+				"line" : 6,
 				"parent" : 0
 			},
 			{
@@ -64,43 +64,43 @@
 				"parent" : 4
 			},
 			{
-				"command" : 6,
-				"file" : 0,
-				"line" : 15,
-				"parent" : 0
-			},
-			{
-				"command" : 5,
-				"file" : 4,
-				"line" : 47,
-				"parent" : 6
-			},
-			{
-				"command" : 4,
-				"file" : 3,
-				"line" : 68,
-				"parent" : 7
-			},
-			{
-				"file" : 2,
-				"parent" : 8
-			},
-			{
-				"command" : 3,
-				"file" : 2,
-				"line" : 43,
-				"parent" : 9
-			},
-			{
 				"command" : 3,
 				"file" : 1,
 				"line" : 75,
 				"parent" : 4
 			},
 			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 47,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 68,
+				"parent" : 8
+			},
+			{
+				"file" : 2,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 43,
+				"parent" : 10
+			},
+			{
 				"command" : 9,
 				"file" : 0,
-				"line" : 18,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
@@ -119,7 +119,7 @@
 				"command" : 7,
 				"file" : 4,
 				"line" : 30,
-				"parent" : 6
+				"parent" : 7
 			}
 		]
 	},
@@ -147,14 +147,6 @@
 			[
 				{
 					"backtrace" : 2,
-					"define" : "CFG_TUSB_MCU=OPT_MCU_RP2040"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "CFG_TUSB_OS=OPT_OS_PICO"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "LIB_PICO_BIT_OPS=1"
 				},
 				{
@@ -176,10 +168,6 @@
 				{
 					"backtrace" : 2,
 					"define" : "LIB_PICO_DOUBLE_PICO=1"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "LIB_PICO_FIX_RP2040_USB_DEVICE_ENUMERATION=1"
 				},
 				{
 					"backtrace" : 2,
@@ -235,7 +223,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"define" : "LIB_PICO_STDIO_USB=1"
+					"define" : "LIB_PICO_STDIO_UART=1"
 				},
 				{
 					"backtrace" : 2,
@@ -260,10 +248,6 @@
 				{
 					"backtrace" : 2,
 					"define" : "LIB_PICO_TIME=1"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "LIB_PICO_UNIQUE_ID=1"
 				},
 				{
 					"backtrace" : 2,
@@ -303,15 +287,11 @@
 				},
 				{
 					"backtrace" : 14,
-					"define" : "PICO_PROGRAM_URL=\"https://github.com/raspberrypi/pico-examples/tree/HEAD/hello_world/usb\""
-				},
-				{
-					"backtrace" : 2,
-					"define" : "PICO_RP2040_USB_DEVICE_UFRAME_FIX=1"
+					"define" : "PICO_PROGRAM_URL=\"https://github.com/raspberrypi/pico-examples/tree/HEAD/hello_world/serial\""
 				},
 				{
 					"backtrace" : 15,
-					"define" : "PICO_TARGET_NAME=\"hello_usb\""
+					"define" : "PICO_TARGET_NAME=\"hello_serial\""
 				},
 				{
 					"backtrace" : 2,
@@ -458,19 +438,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_stdio_usb/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_unique_id/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/hardware_flash/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/common/pico_usb_reset_interface/include"
+					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_stdio_uart/include"
 				},
 				{
 					"backtrace" : 2,
@@ -483,26 +451,6 @@
 				{
 					"backtrace" : 2,
 					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/boot_stage2/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/common"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/hw"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/hardware_i2c/include"
 				}
 			],
 			"language" : "C",
@@ -523,9 +471,9 @@
 				4,
 				5,
 				6,
-				7,
 				8,
 				9,
+				10,
 				11,
 				12,
 				13,
@@ -539,44 +487,17 @@
 				21,
 				22,
 				23,
-				24,
 				25,
 				26,
 				28,
-				29,
 				31,
-				34,
-				35,
+				32,
+				36,
+				37,
 				39,
-				40,
-				42,
-				46,
-				47,
-				48,
-				49,
-				50,
-				51,
-				52,
-				53,
-				54,
-				55,
-				56,
-				57,
-				58,
-				59,
-				60,
-				61,
-				62,
-				63,
-				64,
-				65,
-				66,
-				67,
-				68,
-				69,
-				70,
-				71,
-				72
+				43,
+				44,
+				45
 			]
 		},
 		{
@@ -598,14 +519,6 @@
 			[
 				{
 					"backtrace" : 2,
-					"define" : "CFG_TUSB_MCU=OPT_MCU_RP2040"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "CFG_TUSB_OS=OPT_OS_PICO"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "LIB_PICO_BIT_OPS=1"
 				},
 				{
@@ -627,10 +540,6 @@
 				{
 					"backtrace" : 2,
 					"define" : "LIB_PICO_DOUBLE_PICO=1"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "LIB_PICO_FIX_RP2040_USB_DEVICE_ENUMERATION=1"
 				},
 				{
 					"backtrace" : 2,
@@ -686,7 +595,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"define" : "LIB_PICO_STDIO_USB=1"
+					"define" : "LIB_PICO_STDIO_UART=1"
 				},
 				{
 					"backtrace" : 2,
@@ -711,10 +620,6 @@
 				{
 					"backtrace" : 2,
 					"define" : "LIB_PICO_TIME=1"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "LIB_PICO_UNIQUE_ID=1"
 				},
 				{
 					"backtrace" : 2,
@@ -754,15 +659,11 @@
 				},
 				{
 					"backtrace" : 14,
-					"define" : "PICO_PROGRAM_URL=\"https://github.com/raspberrypi/pico-examples/tree/HEAD/hello_world/usb\""
-				},
-				{
-					"backtrace" : 2,
-					"define" : "PICO_RP2040_USB_DEVICE_UFRAME_FIX=1"
+					"define" : "PICO_PROGRAM_URL=\"https://github.com/raspberrypi/pico-examples/tree/HEAD/hello_world/serial\""
 				},
 				{
 					"backtrace" : 15,
-					"define" : "PICO_TARGET_NAME=\"hello_usb\""
+					"define" : "PICO_TARGET_NAME=\"hello_serial\""
 				},
 				{
 					"backtrace" : 2,
@@ -909,19 +810,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_stdio_usb/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_unique_id/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/hardware_flash/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/common/pico_usb_reset_interface/include"
+					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_stdio_uart/include"
 				},
 				{
 					"backtrace" : 2,
@@ -934,42 +823,22 @@
 				{
 					"backtrace" : 2,
 					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/boot_stage2/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/common"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/hw"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/hardware_i2c/include"
 				}
 			],
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				10,
+				7,
+				24,
 				27,
+				29,
 				30,
-				32,
 				33,
-				36,
-				37,
+				34,
+				35,
 				38,
-				41,
-				43,
-				44
+				40,
+				41
 			]
 		},
 		{
@@ -1010,14 +879,6 @@
 			[
 				{
 					"backtrace" : 2,
-					"define" : "CFG_TUSB_MCU=OPT_MCU_RP2040"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "CFG_TUSB_OS=OPT_OS_PICO"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "LIB_PICO_BIT_OPS=1"
 				},
 				{
@@ -1039,10 +900,6 @@
 				{
 					"backtrace" : 2,
 					"define" : "LIB_PICO_DOUBLE_PICO=1"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "LIB_PICO_FIX_RP2040_USB_DEVICE_ENUMERATION=1"
 				},
 				{
 					"backtrace" : 2,
@@ -1098,7 +955,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"define" : "LIB_PICO_STDIO_USB=1"
+					"define" : "LIB_PICO_STDIO_UART=1"
 				},
 				{
 					"backtrace" : 2,
@@ -1123,10 +980,6 @@
 				{
 					"backtrace" : 2,
 					"define" : "LIB_PICO_TIME=1"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "LIB_PICO_UNIQUE_ID=1"
 				},
 				{
 					"backtrace" : 2,
@@ -1166,15 +1019,11 @@
 				},
 				{
 					"backtrace" : 14,
-					"define" : "PICO_PROGRAM_URL=\"https://github.com/raspberrypi/pico-examples/tree/HEAD/hello_world/usb\""
-				},
-				{
-					"backtrace" : 2,
-					"define" : "PICO_RP2040_USB_DEVICE_UFRAME_FIX=1"
+					"define" : "PICO_PROGRAM_URL=\"https://github.com/raspberrypi/pico-examples/tree/HEAD/hello_world/serial\""
 				},
 				{
 					"backtrace" : 15,
-					"define" : "PICO_TARGET_NAME=\"hello_usb\""
+					"define" : "PICO_TARGET_NAME=\"hello_serial\""
 				},
 				{
 					"backtrace" : 2,
@@ -1321,19 +1170,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_stdio_usb/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_unique_id/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/hardware_flash/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/common/pico_usb_reset_interface/include"
+					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_stdio_uart/include"
 				},
 				{
 					"backtrace" : 2,
@@ -1346,26 +1183,6 @@
 				{
 					"backtrace" : 2,
 					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/boot_stage2/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/common"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/hw"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/mherbert/pico-sdk/src/rp2_common/hardware_i2c/include"
 				}
 			],
 			"language" : "CXX",
@@ -1379,22 +1196,22 @@
 			},
 			"sourceIndexes" : 
 			[
-				45
+				42
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 10,
-			"id" : "ELF2UF2Build::@bf00514b22209e789892"
+			"backtrace" : 6,
+			"id" : "bs2_default_padded_checksummed_asm::@bc554eaed616d198a22d"
 		},
 		{
 			"backtrace" : 11,
-			"id" : "bs2_default_padded_checksummed_asm::@bc554eaed616d198a22d"
+			"id" : "ELF2UF2Build::@bf00514b22209e789892"
 		}
 	],
-	"id" : "hello_usb::@7cf213cc1fe4b5210acb",
+	"id" : "hello_serial::@bf00514b22209e789892",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -2179,7 +1996,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-Wl,-Map=hello_usb.elf.map",
+				"fragment" : "-Wl,-Map=hello_serial.elf.map",
 				"role" : "flags"
 			},
 			{
@@ -2230,12 +2047,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "hello_usb",
-	"nameOnDisk" : "hello_usb.elf",
+	"name" : "hello_serial",
+	"nameOnDisk" : "hello_serial.elf",
 	"paths" : 
 	{
-		"build" : "hello_world/usb",
-		"source" : "hello_world/usb"
+		"build" : "hello_world/serial",
+		"source" : "hello_world/serial"
 	},
 	"sourceGroups" : 
 	[
@@ -2250,9 +2067,9 @@
 				4,
 				5,
 				6,
-				7,
 				8,
 				9,
+				10,
 				11,
 				12,
 				13,
@@ -2266,62 +2083,35 @@
 				21,
 				22,
 				23,
-				24,
 				25,
 				26,
 				28,
-				29,
 				31,
-				34,
-				35,
+				32,
+				36,
+				37,
 				39,
-				40,
 				42,
-				45,
-				46,
-				47,
-				48,
-				49,
-				50,
-				51,
-				52,
-				53,
-				54,
-				55,
-				56,
-				57,
-				58,
-				59,
-				60,
-				61,
-				62,
-				63,
-				64,
-				65,
-				66,
-				67,
-				68,
-				69,
-				70,
-				71,
-				72
+				43,
+				44,
+				45
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				10,
+				7,
+				24,
 				27,
+				29,
 				30,
-				32,
 				33,
-				36,
-				37,
+				34,
+				35,
 				38,
-				41,
-				43,
-				44
+				40,
+				41
 			]
 		}
 	],
@@ -2330,25 +2120,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "hello_world/usb/hello_usb.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "hello_world/usb/ltr303.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "hello_world/usb/ov5640_stream.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "hello_world/usb/sensor.c",
+			"path" : "hello_world/serial/hello_serial.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -2618,151 +2390,7 @@
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/src/rp2_common/hardware_flash/flash.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/device/usbd.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/device/usbd_control.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/class/video/video_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/tusb.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "/Users/mherbert/pico-sdk/src/rp2_common/hardware_i2c/i2c.c",
+			"path" : "/Users/mherbert/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c",
 			"sourceGroupIndex" : 0
 		}
 	],
