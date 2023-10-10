@@ -19,6 +19,10 @@ int main() {
     gpio_pull_up(4);
     gpio_pull_up(5);
 
+    // Add another i2c for camera
+    // call ov5640_init() / ov5640_config()
+    // write the logic for associating camera w/ light sensor
+
     ltr303_init(i2c);
 
     while (true) {

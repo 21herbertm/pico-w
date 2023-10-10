@@ -1,84 +1,30 @@
-/* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.h
-  * @brief          : Header for main.c file.
-  *                   This file contains the common defines of the application.
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2022 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
-/* USER CODE END Header */
+ * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
 
-/* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __MAIN_H
-#define __MAIN_H
+#include <stdio.h>
+#include "/Users/mherbert/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h"
+#include "pico/stdlib.h"
+#include "ltr303.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+int main() {
+    stdio_init_all();
+    // Initialize I2C
+    i2c_inst_t *i2c = i2c0;
+    i2c_init(i2c, 400000);
+    gpio_set_function(4, GPIO_FUNC_I2C);
+    gpio_set_function(5, GPIO_FUNC_I2C);
+    gpio_pull_up(4);
+    gpio_pull_up(5);
 
-/* Includes ------------------------------------------------------------------*/
-#include "stm32f4xx_hal.h"
+    ltr303_init(i2c);
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
-
-/* USER CODE END Includes */
-
-/* Exported types ------------------------------------------------------------*/
-/* USER CODE BEGIN ET */
-
-/* USER CODE END ET */
-
-/* Exported constants --------------------------------------------------------*/
-/* USER CODE BEGIN EC */
-
-/* USER CODE END EC */
-
-/* Exported macro ------------------------------------------------------------*/
-/* USER CODE BEGIN EM */
-
-/* USER CODE END EM */
-
-/* Exported functions prototypes ---------------------------------------------*/
-void Error_Handler(void);
-
-/* USER CODE BEGIN EFP */
-
-/* USER CODE END EFP */
-
-/* Private defines -----------------------------------------------------------*/
-#define DATA_Pin GPIO_PIN_1
-#define DATA_GPIO_Port GPIOA
-#define CLK_Pin GPIO_PIN_2
-#define CLK_GPIO_Port GPIOA
-#define SPI1_NSS_Pin GPIO_PIN_4
-#define SPI1_NSS_GPIO_Port GPIOA
-#define AOUT_Pin GPIO_PIN_1
-#define AOUT_GPIO_Port GPIOB
-#define DOUT_Pin GPIO_PIN_2
-#define DOUT_GPIO_Port GPIOB
-/* USER CODE BEGIN Private defines */
-struct sensor_reg {
-	uint16_t addr;
-	uint16_t data;
-};
-
-
-
-/* USER CODE END Private defines */
-
-#ifdef __cplusplus
+    while (true) {
+        uint16_t ambient_light = ltr303_read_ambient_light(i2c);
+        printf("Hello, world!\n");
+        printf("Ambient light: %d\n", ambient_light);
+        sleep_ms(1000);
+    }
 }
-#endif
-
-#endif /* __MAIN_H */

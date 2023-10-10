@@ -1682,6 +1682,30 @@ ov5640_stream.c.s:
 	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/ov5640_stream.c.s
 .PHONY : ov5640_stream.c.s
 
+sensor.obj: sensor.c.obj
+.PHONY : sensor.obj
+
+# target to build an object file
+sensor.c.obj:
+	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.obj
+.PHONY : sensor.c.obj
+
+sensor.i: sensor.c.i
+.PHONY : sensor.i
+
+# target to preprocess a source file
+sensor.c.i:
+	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.i
+.PHONY : sensor.c.i
+
+sensor.s: sensor.c.s
+.PHONY : sensor.s
+
+# target to generate assembly for a file
+sensor.c.s:
+	cd /Users/mherbert/Desktop/pico-w/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hello_world/usb/CMakeFiles/hello_usb.dir/build.make hello_world/usb/CMakeFiles/hello_usb.dir/sensor.c.s
+.PHONY : sensor.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1885,6 +1909,9 @@ help:
 	@echo "... ov5640_stream.obj"
 	@echo "... ov5640_stream.i"
 	@echo "... ov5640_stream.s"
+	@echo "... sensor.obj"
+	@echo "... sensor.i"
+	@echo "... sensor.s"
 .PHONY : help
 
 
